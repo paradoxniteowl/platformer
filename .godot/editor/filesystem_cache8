@@ -1,7 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1697642981
+::res://::1697644149
+bazzabogan.png::CompressedTexture2D::5926915149266947439::1697644149::1697644149::1::::<><>::
 block.png::CompressedTexture2D::1817437538646461515::1697558081::1697558081::1::::<><>::
 brick.png::CompressedTexture2D::3563946506010650278::1697558087::1697558087::1::::<><>::
 icon.svg::CompressedTexture2D::2587240798271438196::1697557102::1697557110::1::::<><>::
 README.md::TextFile::-1::1697557286::0::1::::<><>::
-world.tscn::PackedScene::6417794048984607022::1697558011::0::1::::<><>::
+player.tscn::PackedScene::2030747066251878678::1697643887::0::1::::<><>::
+world.tscn::PackedScene::6417794048984607022::1697643311::0::1::::<><>::uid://05m6v6o0u0bv::::res://block.png<>uid://bq1nxcceox615::::res://brick.png
