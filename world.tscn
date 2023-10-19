@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://cxo3eowx2bhhm"]
+[gd_scene load_steps=8 format=3 uid="uid://cxo3eowx2bhhm"]
 
 [ext_resource type="Texture2D" uid="uid://05m6v6o0u0bv" path="res://block.png" id="1_fuxnn"]
 [ext_resource type="Texture2D" uid="uid://bq1nxcceox615" path="res://brick.png" id="2_yvmeo"]
 [ext_resource type="PackedScene" uid="uid://36ydwiuqt4lu" path="res://player.tscn" id="3_4pl26"]
+[ext_resource type="PackedScene" uid="uid://pm5gjuh5tjjo" path="res://toad.tscn" id="4_lsvfs"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tymtu"]
 texture = ExtResource("1_fuxnn")
@@ -39,3 +40,6 @@ limit_top = 0
 limit_bottom = 650
 position_smoothing_enabled = true
 position_smoothing_speed = 20.0
+
+[node name="toad" parent="." instance=ExtResource("4_lsvfs")]
+position = Vector2(230, 504)
