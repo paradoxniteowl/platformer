@@ -1,7 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://36ydwiuqt4lu"]
+[gd_scene load_steps=13 format=3 uid="uid://36ydwiuqt4lu"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_4ycq3"]
 [ext_resource type="Texture2D" uid="uid://cqpbored582yl" path="res://bazzabogan.png" id="1_vi4jh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5cr0i"]
+atlas = ExtResource("1_vi4jh")
+region = Rect2(160, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jqhct"]
 atlas = ExtResource("1_vi4jh")
@@ -25,6 +29,14 @@ region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_61gi4"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5cr0i")
+}],
+"loop": true,
+"name": &"die",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_jqhct")
@@ -62,14 +74,16 @@ height = 32.0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2geh1"]
 size = Vector2(28, 29)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fmmo1"]
+size = Vector2(28, 6)
+
 [node name="player" type="CharacterBody2D"]
 script = ExtResource("1_4ycq3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_61gi4")
-animation = &"run"
-frame_progress = 0.0600608
+animation = &"die"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2, -16)
@@ -81,5 +95,15 @@ collision_mask = 3
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox"]
 position = Vector2(2, -17.5)
 shape = SubResource("RectangleShape2D_2geh1")
+
+[node name="feet" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="feet"]
+position = Vector2(2, -3)
+shape = SubResource("RectangleShape2D_fmmo1")
+
+[node name="death_timer" type="Timer" parent="."]
 
 [connection signal="body_entered" from="hitbox" to="." method="_on_hitbox_body_entered"]
