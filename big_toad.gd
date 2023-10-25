@@ -33,8 +33,8 @@ func _on_hitbox_body_entered(body):
 
 func flip():
 	facing_right = !facing_right
-	scale.x = abs(scale.x) + -1
+	scale.x = abs(scale.x) * -1
 	if facing_right:
 		SPEED = abs(SPEED)
 	else:
-		SPEED = abs(SPEED) + -1
+		SPEED = abs(SPEED) * -1
