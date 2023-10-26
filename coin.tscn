@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://bulk8v3p61sse"]
+[gd_scene load_steps=5 format=3 uid="uid://bulk8v3p61sse"]
 
 [ext_resource type="Texture2D" uid="uid://ci83045jl7sn1" path="res://coin.png" id="1_7b2bg"]
 [ext_resource type="Script" path="res://coin.gd" id="2_jtubi"]
+[ext_resource type="AudioStream" uid="uid://dtsa6hdw25318" path="res://coin.mp3" id="3_lvirr"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pnpnq"]
 radius = 11.0
@@ -17,5 +18,8 @@ script = ExtResource("2_jtubi")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="interaction"]
 shape = SubResource("CapsuleShape2D_pnpnq")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="interaction"]
+stream = ExtResource("3_lvirr")
 
 [connection signal="body_entered" from="interaction" to="." method="_on_interaction_body_entered"]
