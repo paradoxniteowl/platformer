@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://dwkodmkb3irsm"]
+[gd_scene load_steps=8 format=3 uid="uid://dwkodmkb3irsm"]
 
 [ext_resource type="Texture2D" uid="uid://cggv0jylgfves" path="res://lvl2-block.png" id="1_wxrqd"]
 [ext_resource type="Texture2D" uid="uid://o52rprwaeurq" path="res://lvl2-brick.png" id="2_rj65a"]
 [ext_resource type="PackedScene" uid="uid://36ydwiuqt4lu" path="res://player.tscn" id="3_wvjyv"]
+[ext_resource type="PackedScene" uid="uid://bru6f10wjytua" path="res://coin_gui.tscn" id="4_uppy5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bqb3o"]
 texture = ExtResource("1_wxrqd")
@@ -41,3 +42,5 @@ position = Vector2(35, 547)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 zoom = Vector2(3, 3)
+
+[node name="coin_gui" parent="." instance=ExtResource("4_uppy5")]
