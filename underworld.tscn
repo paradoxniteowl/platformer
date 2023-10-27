@@ -38,3 +38,6 @@ color = Color(0.027451, 0, 0.266667, 1)
 
 [node name="player" parent="." instance=ExtResource("3_wvjyv")]
 position = Vector2(35, 547)
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+zoom = Vector2(3, 3)
