@@ -10,3 +10,4 @@ res://underworld.tscn
 res://start.tscn
 res://gameover.tscn
 res://questionblock.tscn
+res://player.gd
