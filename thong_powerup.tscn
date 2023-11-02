@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://b71pihe4kf12a"]
+
+[ext_resource type="Texture2D" uid="uid://du578l57wkq7k" path="res://thong.png" id="1_ji2sn"]
+[ext_resource type="Script" path="res://thong_powerup.gd" id="1_qedmx"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3k7no"]
+radius = 12.1655
+
+[node name="thong_powerup" type="Area2D"]
+script = ExtResource("1_qedmx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -14)
+scale = Vector2(0.71875, 0.78125)
+texture = ExtResource("1_ji2sn")
+hframes = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -13)
+shape = SubResource("CircleShape2D_3k7no")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
