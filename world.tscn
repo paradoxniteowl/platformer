@@ -109,7 +109,7 @@ position = Vector2(1096, 426)
 shape = SubResource("CircleShape2D_qohtc")
 
 [node name="questionblock" parent="." instance=ExtResource("10_ntsr8")]
-position = Vector2(283, 233)
+position = Vector2(285, 221)
 
 [node name="questionblock2" parent="." instance=ExtResource("10_ntsr8")]
 position = Vector2(791, 162)
@@ -118,7 +118,10 @@ position = Vector2(791, 162)
 position = Vector2(1012, 289)
 
 [node name="questionblock4" parent="." instance=ExtResource("10_ntsr8")]
-position = Vector2(71, 481)
+position = Vector2(72, 464)
+
+[node name="questionblock5" parent="." instance=ExtResource("10_ntsr8")]
+position = Vector2(88, 302)
 
 [connection signal="body_entered" from="interact" to="." method="_on_interact_body_entered"]
 [connection signal="body_entered" from="transition" to="." method="_on_transition_body_entered"]
