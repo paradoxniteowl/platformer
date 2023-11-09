@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bulk8v3p61sse"]
 
-[ext_resource type="Texture2D" uid="uid://ci83045jl7sn1" path="res://coin.png" id="1_7b2bg"]
+[ext_resource type="Texture2D" uid="uid://2ah0n33my6kr" path="res://R.png" id="1_nisq0"]
 [ext_resource type="Script" path="res://coin.gd" id="2_jtubi"]
 [ext_resource type="AudioStream" uid="uid://dtsa6hdw25318" path="res://coin.mp3" id="3_lvirr"]
 
@@ -11,7 +11,7 @@ height = 34.0
 [node name="coin" type="Sprite2D"]
 position = Vector2(-4.76837e-07, -1.43051e-06)
 scale = Vector2(0.571799, 0.578587)
-texture = ExtResource("1_7b2bg")
+texture = ExtResource("1_nisq0")
 script = ExtResource("2_jtubi")
 
 [node name="interaction" type="Area2D" parent="."]

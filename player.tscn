@@ -1,8 +1,10 @@
-[gd_scene load_steps=23 format=3 uid="uid://36ydwiuqt4lu"]
+[gd_scene load_steps=25 format=3 uid="uid://36ydwiuqt4lu"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_4ycq3"]
 [ext_resource type="Texture2D" uid="uid://cqpbored582yl" path="res://bazzabogan.png" id="1_vi4jh"]
 [ext_resource type="Texture2D" uid="uid://cergai2lsli3o" path="res://bazzalargethongs.png" id="3_0pf8d"]
+[ext_resource type="AudioStream" uid="uid://cef0t1arvfjwe" path="res://die.ogg" id="4_w60wc"]
+[ext_resource type="AudioStream" uid="uid://b6ewno00mr68v" path="res://kill.ogg" id="5_qelf8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5cr0i"]
 atlas = ExtResource("1_vi4jh")
@@ -192,5 +194,11 @@ shape = SubResource("RectangleShape2D_fmmo1")
 [node name="death_timer" type="Timer" parent="."]
 
 [node name="ThongFireTimer" type="Timer" parent="."]
+
+[node name="die_sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_w60wc")
+
+[node name="kill_sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_qelf8")
 
 [connection signal="body_entered" from="hitbox" to="." method="_on_hitbox_body_entered"]

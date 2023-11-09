@@ -1,11 +1,8 @@
-res://thong.tscn
-res://global.gd
-res://player.gd
-res://player.tscn
+res://coin.tscn
 res://world.tscn
+res://player.tscn
 res://toad.tscn
 res://big_toad.tscn
-res://coin.tscn
 res://coin_gui.tscn
 res://underworld.tscn
 res://start.tscn
@@ -13,3 +10,5 @@ res://gameover.tscn
 res://questionblock.tscn
 res://beer.tscn
 res://thong_powerup.tscn
+res://thong.tscn
+res://hell.tscn
