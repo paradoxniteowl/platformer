@@ -5,12 +5,12 @@
 [ext_resource type="AudioStream" uid="uid://dtsa6hdw25318" path="res://coin.mp3" id="3_lvirr"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pnpnq"]
-radius = 11.0
-height = 34.0
+radius = 471.983
+height = 943.967
 
 [node name="coin" type="Sprite2D"]
-position = Vector2(-4.76837e-07, -1.43051e-06)
-scale = Vector2(0.571799, 0.578587)
+position = Vector2(2.38419e-07, -3)
+scale = Vector2(0.0338995, 0.0382935)
 texture = ExtResource("1_nisq0")
 script = ExtResource("2_jtubi")
 
